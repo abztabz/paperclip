@@ -1,0 +1,14 @@
+schema: paperclip/v1
+agents:
+  lead-engineer:
+    inputs:
+      env:
+        GH_TOKEN:
+          kind: secret
+          requirement: optional
+routines:
+  weekly-leadership-review:
+    triggers:
+      - kind: schedule
+        cronExpression: "0 9 * * 1"
+        timezone: Asia/Kathmandu
