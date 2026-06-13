@@ -34,7 +34,7 @@ The governing discipline is **phase gates**: capital and ambition advance only w
 
 The Care Coordinator and Recruiter/QA Officer also form the **Care Operations** team (`teams/operations`), led by the CEO in Phase 1 and by a Head of Operations from Phase 3.
 
-The Marketing Lead runs a lean **marketing pod** — Content & Community, Creative & Copy, and Growth & Outreach — that executes the brand-awareness and acquisition deliverables in-house, converting freelance cash cost into low-cost model spend.
+The Marketing Lead runs a lean **marketing pod** — Content & Community, Creative & Copy, and Growth & Outreach — that executes the brand-awareness and acquisition deliverables in-house, converting freelance cash cost into low-cost model spend. The pod is equipped with vendored, specialty marketing skills (copywriting, social, SEO/CRO, analytics, PR, referrals, and more — see `skills/`, MIT, attributed to Corey Haines' Marketing Skills collection) so each agent runs with domain best-practices, not just general capability.
 
 ### Roles in brief
 - **CEO** — owns the plan, capital, and phase gates; assigns work and tracks the Phase 1 exit gate weekly.
