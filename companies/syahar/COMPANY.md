@@ -21,6 +21,14 @@ tags:
 
 स्याहार · **Syahar** productises the family-attendant role that Nepali hospital culture requires for every in-patient. Nepal's labour out-migration has separated the earning generation (abroad) from the ageing generation (home); Syahar fills that absence with a managed, transparent, payable care service. Families abroad pay for peace of mind, caregivers earn dignified stable income, and Syahar earns a blended take of ~22–28% of gross care spend.
 
+## ⭐ Golden Rule — what Syahar is (non-negotiable)
+
+**Syahar is a cross-border _caregiver_ platform.** We give diaspora families peace of mind by placing vetted, insured, professional caregivers with their hospitalised or ageing parents in Nepal — with daily care reports, transparent pricing, and human coordination.
+
+**Syahar is NOT a remittance, money-transfer, or FX service.** Payment and remittance brands (IME, eSewa, Khalti, banks, PSPs) are **partners and audience signals — never our product, and never competitors.** FX margin is one small internal revenue line, never a market position.
+
+Every deliverable — ad, post, headline, CTA, proposal, landing page, partnership — must sell **care and peace of mind**, never exchange rates or "send money home." Any work product that drifts into remittance/money-transfer positioning is **off-strategy and must be corrected before use.** This rule overrides convenience, channel tactics, and prior drafts.
+
 ## How this company operates — hub-and-spoke
 
 The **CEO** holds the strategy and the phase gates, and dispatches work to a five-person founding team. Each function reports directly to the CEO during Phase 1 (manual-first, trust-led):

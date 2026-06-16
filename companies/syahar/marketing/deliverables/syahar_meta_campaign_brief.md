@@ -2,16 +2,18 @@
 
 **Issue:** SYA-29 | **Budget:** NPR 5,000/mo | **Period:** Ongoing from launch
 
+> **GOLDEN RULE — positioning (non-negotiable):** Syahar is a **cross-border caregiver platform** that gives diaspora families peace of mind by placing vetted, insured caregivers with their hospitalised/ageing parents in Nepal. Syahar is **NOT** a remittance or money-transfer service. Every ad, headline, and CTA sells **care and peace of mind**, never exchange rates or "send money." Remittance brands (IME, eSewa, Khalti) are **partners and audience signals, never competitors.** This brief was corrected on 2026-06-16 to enforce this rule.
+
 ---
 
 ## 1. Business Manager Setup
 
 ### Step-by-step (Business Manager)
 1. Go to [business.facebook.com](https://business.facebook.com) → Create Account
-2. Business Name: **Syahar Remittance Pvt Ltd**
+2. Business Name: **Syahar Care Pvt Ltd**
 3. Add Ad Account: Currency **USD** (Meta does not support NPR billing; fund via card/NPR equivalent)
-4. Connect Instagram account: **@syahar_official** (or create one)
-5. Create Facebook Page: **Syahar – पैसा पठाउनुस् सजिलोसँग**
+4. Connect Instagram account: **@syahar_care** (or create one)
+5. Create Facebook Page: **Syahar – आफ्ना बुबाआमाको हेरचाह, जहाँबाट पनि** *(Care for your parents, from anywhere)*
 6. Enable **Lead Ads** form or connect Pixel to `syahar.com`
 
 ---
@@ -43,12 +45,13 @@ Campaign: SYAHAR_NRN_ABTEST_2026Q2
 | Placement | Facebook Feed (60%) + Instagram Feed + Reels (40%) |
 
 ### Interest Targeting (Detailed)
+*Audience signals only — these identify diaspora Nepalis with family back home. The **message** is caregiving, never money transfer.*
 - Non-Resident Nepali (NRN) Association
-- Nepal Money Transfer / Remittance
-- IME Remittance, Prabhu Money Transfer, Western Union
-- eSewa, Khalti
-- Nepal, Nepali language, Himalayan Bank
-- Dashain, Nepali community abroad
+- Nepali community abroad; Nepali language; Dashain / Tihar
+- Remittance behaviour (IME, eSewa, Khalti, Western Union) — **as an audience proxy for "sends support home," not a positioning**
+- Elderly care, caregiving, eldercare, family caregivers
+- Nursing & home health; ageing parents
+- Nepal; Himalayan Bank; Nepali diaspora groups
 
 ### Location + Estimated Nepali Diaspora
 | Ad Set | Country | Est. NRN Population |
@@ -90,47 +93,47 @@ Campaign: SYAHAR_NRN_ABTEST_2026Q2
 **Format:** Video (15–30s) or carousel with family imagery
 
 **Headline (Nepali):**
-> घरमा पैसा पठाउनु छ? Syahar ले सजिलो बनाउँछ।
+> बुबाआमा नेपालमा एक्लै हुनुहुन्छ? Syahar सँधै साथमा।
 
-**English translation:** Need to send money home? Syahar makes it easy.
+**English translation:** Are your parents alone in Nepal? Syahar is always by their side.
 
 **Body Text (Nepali):**
-> UK बाट नेपाल पैसा पठाउँदा, Syahar ले सबैभन्दा राम्रो दर दिन्छ। तपाईंको परिवारलाई छिटो, सुरक्षित र सस्तो तरिकाले पैसा पठाउनुस् — जुनसुकै बेला, जहाँबाट पनि।
+> विदेशबाट माया पठाउनु सजिलो छ — तर अस्पताल वा घरमा बुबाआमालाई कोही साथमा चाहिन्छ। Syahar ले प्रमाणित, बीमित केयरगिभर उपलब्ध गराउँछ। दैनिक केयर रिपोर्ट, पारदर्शी मूल्य, र मन ढुक्क — जहाँबाट पनि।
 
-**English translation:** When sending money from UK to Nepal, Syahar gives you the best exchange rate. Send money to your family quickly, safely, and at low cost — anytime, from anywhere.
+**English translation:** Sending love from abroad is easy — but in hospital or at home, your parents need someone present. Syahar provides vetted, insured caregivers, with daily care reports, transparent pricing, and peace of mind — from anywhere.
 
-**CTA Button:** अहिले पठाउनुस् *(Send Now)*
+**CTA Button:** वेटलिस्टमा सामेल हुनुस् *(Join the waitlist)*
 
-**Visual brief:** Show warm family scene (video call, festival preparation, children receiving money). End card shows Syahar logo + tagline.
+**Visual brief:** A caregiver helping an elderly parent at a hospital bedside / at home; an adult child abroad watching a daily care-report come in on their phone, relieved. End card: Syahar logo + tagline *"आफ्ना बुबाआमाको हेरचाह, जहाँबाट पनि" (Care for your parents, from anywhere).* **No money/remittance imagery.**
 
 ---
 
 ### AD B — Rational Creative
 
-**Format:** Static image or short video with rate comparison table
+**Format:** Static image or short video — "what you get" feature card
 
 **Headline (Nepali):**
-> UK→नेपाल: सबैभन्दा कम शुल्क, सबैभन्दा राम्रो दर
+> नेपालमा बुबाआमाको लागि भरपर्दो केयरगिभर — विदेशबाट व्यवस्थापन गर्नुस्
 
-**English translation:** UK→Nepal: Lowest fees, best exchange rate
+**English translation:** A trusted caregiver for your parents in Nepal — managed from abroad.
 
 **Body Text (Nepali):**
-> ✓ पहिलो ट्रान्सफरमा ०% शुल्क
-> ✓ Real-time विनिमय दर
-> ✓ मिनेटमा नेपाल पुग्छ
-> ✓ Bank • eSewa • Khalti मा receive गर्नुस्
-> ✓ IME र Western Union भन्दा सस्तो
+> ✓ प्रमाणित + बीमित केयरगिभर
+> ✓ अस्पताल र घरमा हेरचाह
+> ✓ दैनिक केयर रिपोर्ट + फोटो
+> ✓ पारदर्शी NPR मूल्य — लुकेको शुल्क छैन
+> ✓ पहिलो प्लेसमेन्टमा सन्तुष्टि ग्यारेन्टी
 
 **English translation:**
-> ✓ 0% fee on first transfer
-> ✓ Real-time exchange rate
-> ✓ Arrives in Nepal in minutes
-> ✓ Receive via Bank • eSewa • Khalti
-> ✓ Cheaper than IME and Western Union
+> ✓ Vetted + insured caregivers
+> ✓ In-hospital and at-home care
+> ✓ Daily care reports + photos
+> ✓ Transparent NPR pricing — no hidden fees
+> ✓ Satisfaction guarantee on the first placement
 
-**CTA Button:** अहिले तुलना गर्नुस् *(Compare Now)*
+**CTA Button:** अहिले सुरु गर्नुस् *(Get started)*
 
-**Visual brief:** Clean infographic showing side-by-side rate comparison (Syahar vs IME vs WU). Syahar highlighted as winner. Syahar brand colors.
+**Visual brief:** Clean "what you get with Syahar" feature card — vetting/insurance badges, a daily care-report screenshot, a caregiver-with-patient photo. Syahar brand colors. **No competitor/rate comparison — we do not benchmark against IME or Western Union; they are not our category.**
 
 ---
 
@@ -144,19 +147,19 @@ utm_source = facebook | instagram
 utm_medium = paid_social
 utm_campaign = syahar_nrn_{corridor}_abtest_2026q2
 utm_content = ad_a_emotional | ad_b_rational
-utm_term = {corridor}_nepali_remittance
+utm_term = {corridor}_nepali_caregiving
 ```
 
 ### Complete UTM URL Matrix
 
 | Corridor | Ad A URL | Ad B URL |
 |----------|----------|----------|
-| UK | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_uk_abtest_2026q2&utm_content=ad_a_emotional&utm_term=uk_nepali_remittance` | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_uk_abtest_2026q2&utm_content=ad_b_rational&utm_term=uk_nepali_remittance` |
-| UAE | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_uae_abtest_2026q2&utm_content=ad_a_emotional&utm_term=uae_nepali_remittance` | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_uae_abtest_2026q2&utm_content=ad_b_rational&utm_term=uae_nepali_remittance` |
-| Qatar | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_qatar_abtest_2026q2&utm_content=ad_a_emotional&utm_term=qatar_nepali_remittance` | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_qatar_abtest_2026q2&utm_content=ad_b_rational&utm_term=qatar_nepali_remittance` |
-| Kuwait | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_kuwait_abtest_2026q2&utm_content=ad_a_emotional&utm_term=kuwait_nepali_remittance` | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_kuwait_abtest_2026q2&utm_content=ad_b_rational&utm_term=kuwait_nepali_remittance` |
-| AUS | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_aus_abtest_2026q2&utm_content=ad_a_emotional&utm_term=aus_nepali_remittance` | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_aus_abtest_2026q2&utm_content=ad_b_rational&utm_term=aus_nepali_remittance` |
-| KOR | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_kor_abtest_2026q2&utm_content=ad_a_emotional&utm_term=kor_nepali_remittance` | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_kor_abtest_2026q2&utm_content=ad_b_rational&utm_term=kor_nepali_remittance` |
+| UK | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_uk_abtest_2026q2&utm_content=ad_a_emotional&utm_term=uk_nepali_caregiving` | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_uk_abtest_2026q2&utm_content=ad_b_rational&utm_term=uk_nepali_caregiving` |
+| UAE | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_uae_abtest_2026q2&utm_content=ad_a_emotional&utm_term=uae_nepali_caregiving` | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_uae_abtest_2026q2&utm_content=ad_b_rational&utm_term=uae_nepali_caregiving` |
+| Qatar | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_qatar_abtest_2026q2&utm_content=ad_a_emotional&utm_term=qatar_nepali_caregiving` | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_qatar_abtest_2026q2&utm_content=ad_b_rational&utm_term=qatar_nepali_caregiving` |
+| Kuwait | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_kuwait_abtest_2026q2&utm_content=ad_a_emotional&utm_term=kuwait_nepali_caregiving` | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_kuwait_abtest_2026q2&utm_content=ad_b_rational&utm_term=kuwait_nepali_caregiving` |
+| AUS | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_aus_abtest_2026q2&utm_content=ad_a_emotional&utm_term=aus_nepali_caregiving` | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_aus_abtest_2026q2&utm_content=ad_b_rational&utm_term=aus_nepali_caregiving` |
+| KOR | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_kor_abtest_2026q2&utm_content=ad_a_emotional&utm_term=kor_nepali_caregiving` | `https://syahar.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=syahar_nrn_kor_abtest_2026q2&utm_content=ad_b_rational&utm_term=kor_nepali_caregiving` |
 
 **Pixel Setup:** Install Meta Pixel on `syahar.com` → track `PageView`, `Lead`, `CompleteRegistration` events.
 
@@ -170,7 +173,7 @@ utm_term = {corridor}_nepali_remittance
 | CTR | ≥ 1.5% | Meta Ads Manager → Ad-level breakdown |
 | CPL | ≤ NPR 500 (~$3.70) | Meta Pixel lead event / form submission |
 | CPC | ≤ NPR 30 | Ad Manager breakdown |
-| ROAS | Track only (week 2+) | Pixel purchase events |
+| Waitlist signups | Track from week 1 | Pixel Lead / CompleteRegistration events |
 
 **Corridor breakdown:** Use Meta's Breakdown → Delivery → Country to segment CPM/CTR/CPL per corridor.
 
