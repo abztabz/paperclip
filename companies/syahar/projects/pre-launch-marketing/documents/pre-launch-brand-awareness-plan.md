@@ -1,10 +1,20 @@
 # Syahar — Pre-Launch Brand Awareness Plan
 
 **Owner:** Marketing Lead (control-plane task **SYA-18**) · **Sponsor:** CEO
-**Status:** Draft for CEO approval · **Prepared:** 2026-06-12
+**Status:** Living plan — revised at every UK market-intelligence report instance · **Prepared:** 2026-06-12 · **Last revised:** 2026-06-16 (Reports #1–#2)
 **Window:** T-10 to T-0 weeks (the ~10 weeks before the first Kathmandu placements go live)
 
 > Goal in one line: arrive at launch day with a **warm, segmented waitlist of diaspora families and a trusted name in 2–3 key corridors**, so Phase 1 placements have demand on day one instead of a cold start.
+
+---
+
+## 0. Plan revisions log — driven by UK market intelligence
+
+**Standing rule:** this plan is revised at **every UK market-intelligence report instance** to reflect new findings. Latest changes:
+
+- **From Report #2 (2026-06-16) — competitive correction:** retire the "incumbent is disorganisation / no competitors" framing. Real Nepal home-care providers exist (MedEx, Nursing Care Nepal, Doctors House Call) and one (Nursing Care Nepal) already courts NRN families; an app (RNest) signals a digital entrant. **New positioning: compete on the *cross-border trust layer* (UK-side onboarding, daily reports, transparent FX billing, hospital MoUs), not on novelty.** Add competitive urgency and a build-vs-partner option on supply (existing home-care providers could be carer suppliers).
+- **From Report #1 (2026-06-16) — UK re-aim:** the buyer is the **work-/study-migrant cohort whose parents are in Nepal** (London: Hounslow/Hillingdon/Ealing/Woolwich; Reading/Basingstoke), **not** the Gurkha-heavy Rushmoor population (whose elders largely relocated to the UK). Use Rushmoor/Gurkha networks for **trust halo & testimonials**, not as the primary demand pool. **Price is not the constraint (~£183/mo ACV vs £20–30/hr UK care); trust is.**
+- **Focus override (CEO, 2026-06-16):** all corridors except **UK** are paused; UK is the sole pre-launch focus until further notice.
 
 ---
 
@@ -12,7 +22,7 @@
 
 Syahar's Phase 1 exit gate requires **≥1 diaspora corridor generating organic referrals** and contribution-positive placements. Both are far cheaper to hit if awareness and trust are built *before* we ask anyone to pay. Pre-launch is also when we manufacture our single most valuable asset — **proof** (waitlist demand, design-partner stories, testimonials) — which every later channel compounds on.
 
-The incumbent is **disorganisation** (a relative phoning around for an informal attendant). We are not fighting a brand; we are converting anxiety into a trusted, visible alternative. Pre-launch awareness is mostly a **trust-manufacturing** exercise, not a reach exercise.
+We compete on the **cross-border trust layer**, not novelty. Informal attendants *and* Nepal home-care providers (MedEx, Nursing Care Nepal, etc.) already exist — but none offers a UK-diaspora-first, app-mediated experience with vetting, daily reports, transparent home-currency billing, hospital MoUs, and UK-side concierge. That gap is our wedge, and the window is open but not infinite (one provider already markets to NRN families; an app entrant exists). Pre-launch awareness is mostly a **trust-manufacturing** exercise, executed with urgency.
 
 ## 2. Market grounding (the research)
 
@@ -27,17 +37,16 @@ The structural demand is unusually large and concentrated, which makes targeted 
   - **Gulf: Qatar ≈ 267k, Saudi ≈ 298k, UAE rising**; **Malaysia 500k–700k**; **South Korea ≈ 90k** — huge but lower-income, mixed willingness-to-pay. ([Nepal Labour Migration Report 2024](https://www.researchgate.net/publication/398610144_Nepal_Labour_Migration_Report_2024))
 - **A ready-made distribution graph exists: the NRNA** (Non-Resident Nepali Association) — National Coordination Councils in **90 countries**, with Australia alone running **8 state councils + women's, youth and student forums** and 22,500+ Facebook followers. This is the single highest-leverage pre-launch partnership channel. ([NRNA](https://nrna.org/), [NRNA Australia](https://www.facebook.com/NRNAAustralia/), [NRNA Europe](https://nrna.eu/))
 
-**Implication for targeting:** lead with the **high-income, high-trust-required corridors (UK → Australia → USA)** for paying-family awareness, while seeding **Gulf/Korea** lightly for volume and word-of-mouth back home. Don't spread thin — win one corridor's trust first.
+**Implication for targeting (revised per Reports #1–#2 + CEO focus override):** **UK only** for now. *Within the UK*, lead with the **work-/study-migrant cohort whose parents are in Nepal** — concentrated in **London (Hounslow/Hillingdon/Ealing/Woolwich) and Reading/Basingstoke** — and use **Rushmoor/Gurkha networks for trust halo and testimonials**, not as the primary demand pool. Australia/USA/Gulf are paused. Win the UK corridor's trust first; lead with trust, not price.
 
 ## 3. Target segments (priority order)
 
 | # | Segment | Why prioritised | Primary need | Entry channel |
 |---|---|---|---|---|
-| 1 | **UK Nepali families, 30–55, parent ageing in Kathmandu Valley** | Smallest/tightest community, dense NRNA + Gurkha networks, high trust transfer, English-comfortable | Trust + transparency from a distance | NRNA UK chapters, UK Nepali FB/Viber groups, Gurkha networks |
-| 2 | **Australia Nepali families** | Largest fast-growing high-income corridor, very active NRNA | Same | NRNA Australia state councils, student/alumni networks |
-| 3 | **USA Nepali families** | Largest absolute high-income pool, dispersed | Same | City Nepali associations, temple/cultural orgs, FB |
-| 4 | **Gulf & South Korea workers** (secondary) | Volume + they *talk to family at home daily* → seeds in-country word-of-mouth | Affordable reassurance | Viber/Facebook worker groups; in-Nepal family referral |
+| 1 | **UK work/study migrants, 28–50 — parents still in Nepal** (London: Hounslow/Hillingdon/Ealing/Woolwich; Reading/Basingstoke) | **Primary buyer.** Parents in Nepal (not relocated), high earnings, smartphone-native; many work in UK NHS/social care so they already value professional caregiving | Trust + transparency from a distance | Nepali NHS/care-worker WhatsApp & FB groups, NRN student forums, London/Reading community groups |
+| 2 | **UK Gurkha-linked families (Rushmoor/Aldershot)** — *trust halo, not primary demand* | Many elders relocated to UK → lower direct need, **but** the highest-trust community; source of credibility + testimonials | Credibility transfer | Gurkha associations, NRNA UK; use for testimonials & endorsement |
 | — | **In-Kathmandu family decision-makers** (the sibling on the ground) | Often co-decide; reachable at hospitals | Logistics + reassurance | Hospital on-site (SYA-6) |
+| ⏸ | *Australia / USA / Gulf / Korea* | **Paused** under the CEO UK-only focus override | — | — |
 
 ## 4. Channel plan (pre-launch, costed)
 
