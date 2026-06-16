@@ -59,6 +59,15 @@ The founding team is the Phase 1 roster. Later phases add hires as gates clear: 
 | Net revenue (NPR cr) | 0.30 | 2.00 | 7.00 | 20.5 | 41.4 |
 | Op. profit (NPR cr) | (0.95) | (1.40) | (0.60) | 5.40 | 16.9 |
 
+## Projects
+All work products are collated under `projects/<slug>/` with a `documents/` folder:
+
+| Project | Owner | Contents |
+|---|---|---|
+| `phase-1-validate` | CEO | The Phase 1 "Validate" launch — 17 starter tasks across legal, supply, product, ops, and acquisition. |
+| `pre-launch-marketing` | Marketing Lead | Marketing plans + agent-produced deliverables — brand-awareness plan, spend plan, content calendar, Meta ads brief, partnership proposals. |
+| `uk-market-intelligence` | CEO | Recurring UK-corridor market research + financial/marketing analysis (numbered reports). |
+
 ## Getting started
 Import this company into Paperclip:
 
