@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syahar — Investor Deck (UK Beachhead · Financials · Budget)</title>
+<style>
+  :root{
+    --ink:#15303b; --ink2:#3a5563; --muted:#6b8290; --line:#dce6ea;
+    --teal:#0e7c7b; --teal-d:#0a5a59; --teal-l:#5bbcb6;
+    --amber:#f0a04b; --amber-d:#d98230; --rose:#e07a5f;
+    --bg:#f4f7f8; --navy:#0f2530; --card:#ffffff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Segoe UI',-apple-system,Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .deck{max-width:1080px;margin:0 auto;padding:24px 16px}
+  .slide{background:var(--card);border-radius:18px;box-shadow:0 10px 34px rgba(20,48,59,.10);
+    padding:54px 60px;margin-bottom:28px;position:relative;overflow:hidden;min-height:560px;
+    display:flex;flex-direction:column;justify-content:center}
+  .slide .num{position:absolute;top:22px;right:30px;font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.5px}
+  .kicker{font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:14px}
+  h1{font-size:62px;line-height:1.04;letter-spacing:-1.5px;margin-bottom:18px}
+  h2{font-size:34px;line-height:1.12;letter-spacing:-.5px;margin-bottom:18px}
+  h3{font-size:20px;margin-bottom:8px}
+  p{font-size:18px;color:var(--ink2);margin-bottom:14px}
+  p.big{font-size:22px}
+  .lead{font-size:24px;color:var(--ink2);max-width:760px}
+  .muted{color:var(--muted)}
+  .pill{display:inline-block;background:rgba(14,124,123,.10);color:var(--teal-d);
+    font-weight:600;font-size:14px;padding:6px 14px;border-radius:999px;margin:4px 6px 4px 0}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card2{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .card2 .stat{font-size:38px;font-weight:800;color:var(--teal-d);letter-spacing:-1px}
+  .card2 .lbl{font-size:15px;color:var(--muted);margin-top:4px}
+  ul{margin:6px 0 6px 2px;list-style:none}
+  li{font-size:18px;color:var(--ink2);padding-left:30px;position:relative;margin-bottom:12px}
+  li:before{content:"";position:absolute;left:0;top:9px;width:11px;height:11px;border-radius:3px;background:var(--amber)}
+  li.check:before{background:var(--teal)}
+  li.x:before{background:var(--rose)}
+  .tag{font-size:13px;font-weight:700;color:var(--amber-d);text-transform:uppercase;letter-spacing:1px}
+  table{width:100%;border-collapse:collapse;margin-top:8px;font-size:16.5px}
+  th,td{text-align:left;padding:13px 14px;border-bottom:1px solid var(--line)}
+  th{font-size:12.5px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);font-weight:700}
+  td.price{font-weight:800;color:var(--teal-d);white-space:nowrap}
+  tr:last-child td{border-bottom:none}
+  .hero{background:linear-gradient(150deg,#0f2530 0%,#0e514f 60%,#0e7c7b 100%);color:#fff;min-height:600px}
+  .hero h1,.hero h2{color:#fff}
+  .hero .kicker{color:var(--amber)}
+  .hero p,.hero .lead{color:rgba(255,255,255,.86)}
+  .hero .num{color:rgba(255,255,255,.55)}
+  .logo{display:flex;align-items:center;gap:14px;margin-bottom:30px}
+  .logo .mark{width:54px;height:54px;border-radius:14px;background:rgba(255,255,255,.12);
+    display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.22)}
+  .logo .name{font-size:26px;font-weight:800;letter-spacing:.5px}
+  .footnote{font-size:12.5px;color:var(--muted);margin-top:18px;font-style:italic}
+  .chartwrap{width:100%;margin-top:6px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  svg{width:100%;height:auto;display:block}
+  .legend{display:flex;gap:22px;flex-wrap:wrap;margin-top:10px;font-size:14px;color:var(--ink2)}
+  .legend span{display:inline-flex;align-items:center;gap:7px}
+  .legend i{width:14px;height:14px;border-radius:4px;display:inline-block}
+  .ribbon{display:inline-block;background:var(--amber);color:#3a2410;font-weight:800;font-size:13px;
+    padding:5px 12px;border-radius:6px;letter-spacing:.5px;margin-bottom:14px}
+  .gold{display:inline-block;background:rgba(240,160,75,.14);border:1px solid var(--amber);color:var(--amber-d);
+    font-weight:700;font-size:12.5px;padding:5px 12px;border-radius:6px;letter-spacing:.3px;margin-bottom:14px}
+  @media print{
+    body{background:#fff}
+    .deck{max-width:none;padding:0}
+    .slide{box-shadow:none;border-radius:0;margin:0;page-break-after:always;min-height:100vh;border-bottom:1px solid #eee}
+  }
+  @media(max-width:760px){
+    .deck{padding:14px 10px}
+    .slide{padding:34px 24px;min-height:0!important;border-radius:14px;margin-bottom:18px}
+    .slide .num{top:16px;right:18px}
+    .grid2,.grid3{grid-template-columns:1fr;gap:16px}
+    h1{font-size:38px;letter-spacing:-1px}
+    h2{font-size:26px}
+    h3{font-size:18px}
+    p,li,p.big{font-size:16px}
+    .lead{font-size:19px}
+    .hero,.hero[style]{min-height:0}
+    .chartwrap svg{min-width:560px}
+    table{font-size:14px}
+    th,td{padding:9px 10px}
+    .card2{padding:16px}
+    .card2 .stat{font-size:30px}
+    .logo .name{font-size:22px}
+    .legend{font-size:12.5px;gap:14px}
+  }
+  @media(max-width:430px){
+    .slide{padding:28px 18px}
+    h1{font-size:30px}
+    h2{font-size:22px}
+    .lead{font-size:17px}
+    .ribbon,.kicker{font-size:11px}
+    .chartwrap svg{min-width:500px}
+    table{font-size:13px}
+    th,td{padding:7px 8px}
+  }
+</style>
+</head>
+<body>
+<div class="deck">
+
+<!-- 1 — TITLE -->
+<section class="slide hero">
+  <span class="num">01</span>
+  <div class="logo">
+    <div class="mark">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f0a04b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg>
+    </div>
+    <div class="name">Syahar · स्याहार</div>
+  </div>
+  <span class="kicker">Care for the parents left behind — verified, from anywhere</span>
+  <h1>The cross-border<br>caregiver platform.</h1>
+  <p class="lead">Syahar places vetted, insured caregivers with hospitalised and ageing parents in Nepal — and gives the diaspora child abroad <strong>daily proof</strong> their parent is cared for. We sell peace of mind, not money transfer.</p>
+  <p class="muted" style="margin-top:28px;font-size:15px">Investor deck · UK beachhead · June 2026 · Confidential</p>
+</section>
+
+<!-- 2 — PROBLEM -->
+<section class="slide">
+  <span class="num">02</span>
+  <span class="kicker">The problem</span>
+  <h2>The money gets home. Care — and proof of it — does not.</h2>
+  <div class="grid2" style="align-items:center;margin-top:10px">
+    <div>
+      <ul>
+        <li class="x"><strong>3.5M+ Nepalis</strong> work abroad; their parents age at home, and Nepali hospitals expect a family attendant at every in-patient bed.</li>
+        <li class="x">The diaspora child sends remittance <strong>hoping</strong> it buys care — with no contract, no backup, and <strong>no way to know</strong> their parent is actually safe.</li>
+        <li class="x">Distance becomes <strong>guilt and dread</strong>: "Is Aama okay today — and am I failing her by not being there?"</li>
+        <li class="x">Today's "solution" is a relative phoning around for an informal attendant.</li>
+      </ul>
+    </div>
+    <div class="card2" style="background:var(--navy);color:#fff;border:none">
+      <div style="font-size:58px;font-weight:800;color:var(--amber);letter-spacing:-2px">~25%</div>
+      <div style="font-size:17px;color:rgba(255,255,255,.8);margin-bottom:22px">of Nepal's GDP is remittances (~USD 11.25B/yr)</div>
+      <div style="font-size:58px;font-weight:800;color:var(--amber);letter-spacing:-2px">£183/mo</div>
+      <div style="font-size:17px;color:rgba(255,255,255,.8)">fully manages a parent's care in Nepal — vs £20–30/<em>hr</em> in the UK</div>
+    </div>
+  </div>
+  <p class="footnote">Sources: World Bank / Nepal Rastra Bank remittance data 2024–25; Nepal Labour Migration Report 2024; Nepal home-care pricing (doctorshousecall.com.np).</p>
+</section>
+
+<!-- 3 — INSIGHT -->
+<section class="slide" style="background:linear-gradient(160deg,#fff 0%,#f1f7f6 100%)">
+  <span class="num">03</span>
+  <span class="ribbon">THE KEY INSIGHT</span>
+  <h2>They're not buying caregiver-hours.<br>They're buying peace of mind.</h2>
+  <p class="lead">The child abroad already pays for care, blind. Syahar converts <strong>anxiety into accountability</strong> — vetted carers, daily reports, transparent pricing, one shared feed of a parent's wellbeing.</p>
+  <div class="grid3" style="margin-top:26px">
+    <div class="card2"><div class="tag">Who pays</div><h3 style="margin-top:6px">The child abroad</h3><p style="font-size:15px;margin:0">Hard currency, acute guilt, non-negotiable spend.</p></div>
+    <div class="card2"><div class="tag">What they buy</div><h3 style="margin-top:6px">Presence + proof</h3><p style="font-size:15px;margin:0">"My parent is cared for — and I can see it daily."</p></div>
+    <div class="card2"><div class="tag">The moat</div><h3 style="margin-top:6px">Cross-border trust</h3><p style="font-size:15px;margin:0">Auditable care a distant payer can rely on.</p></div>
+  </div>
+</section>
+
+<!-- 4 — SOLUTION -->
+<section class="slide">
+  <span class="num">04</span>
+  <span class="kicker">The solution</span>
+  <h2>An asset-light layer of verified care</h2>
+  <div class="grid2">
+    <div>
+      <ul>
+        <li class="check"><strong>Caregivers, vetted &amp; insured.</strong> A recruited, trained, background-checked pool — with an on-call backup bench so no patient is ever unattended.</li>
+        <li class="check"><strong>Every visit is verified.</strong> Daily care reports, vitals, and consented photo/video — turned into clear "your mother ate, walked, was well" updates.</li>
+        <li class="check"><strong>Pay &amp; manage from abroad.</strong> In-app cross-border payment in home currency, caregiver profiles, messaging, scheduled calls.</li>
+        <li class="check"><strong>The family, together.</strong> Siblings share one feed; one transparent NPR bill; money-back on the first placement.</li>
+      </ul>
+    </div>
+    <div class="card2">
+      <div class="tag">How it works</div>
+      <div style="margin-top:14px">
+        <p class="big" style="margin-bottom:10px"><strong style="color:var(--teal-d)">1.</strong> Child abroad picks a care plan &amp; pays in-app.</p>
+        <p class="big" style="margin-bottom:10px"><strong style="color:var(--teal-d)">2.</strong> A vetted caregiver attends the parent — hospital or home.</p>
+        <p class="big" style="margin-bottom:10px"><strong style="color:var(--teal-d)">3.</strong> Verified daily report + health notes after each visit.</p>
+        <p class="big" style="margin:0"><strong style="color:var(--teal-d)">4.</strong> Family sees the feed, messages, video-calls.</p>
+      </div>
+    </div>
+  </div>
+  <p class="footnote"><span class="gold">⭐ Golden rule</span> Syahar is a caregiver platform, never a remittance / money-transfer service. Payment partners (IME, eSewa, Khalti) are rails, never our product.</p>
+</section>
+
+<!-- 5 — WHY UK FIRST -->
+<section class="slide">
+  <span class="num">05</span>
+  <span class="kicker">Beachhead · why the UK first</span>
+  <h2>Win the highest-trust, highest-paying corridor first</h2>
+  <p>Our research re-aimed the entry point. The UK isn't the biggest diaspora — it's the <strong>best beachhead</strong>: settled, high-income, smartphone-native families whose parents are still in Nepal, many already working in UK health &amp; social care.</p>
+  <div class="grid2" style="align-items:center;margin-top:6px">
+    <div class="chartwrap">
+      <svg viewBox="0 0 460 320" role="img" aria-label="UK Nepali market">
+        <g font-size="13" fill="#6b8290"><text x="10" y="20" font-size="14" font-weight="700" fill="#15303b">UK Nepali community</text></g>
+        <!-- bars -->
+        <rect x="40" y="60" width="380" height="38" rx="5" fill="#0e7c7b"/>
+        <text x="52" y="84" font-size="15" font-weight="800" fill="#fff">~107,000 ethnic Nepali (UK)</text>
+        <rect x="40" y="112" width="300" height="38" rx="5" fill="#2a9d8f"/>
+        <text x="52" y="136" font-size="15" font-weight="800" fill="#fff">~81,000 Nepal-born</text>
+        <rect x="40" y="164" width="150" height="38" rx="5" fill="#f0a04b"/>
+        <text x="52" y="188" font-size="14" font-weight="800" fill="#3a2410">London + Reading clusters</text>
+        <rect x="40" y="216" width="95" height="38" rx="5" fill="#e07a5f"/>
+        <text x="52" y="240" font-size="13" font-weight="800" fill="#fff">Rushmoor 10,575</text>
+        <text x="40" y="286" font-size="13.5" fill="#6b8290">Buyer = work/study migrants (parents in Nepal),</text>
+        <text x="40" y="304" font-size="13.5" fill="#6b8290">not Gurkha-settled elders (who relocated to the UK).</text>
+      </svg>
+    </div>
+    <div>
+      <ul>
+        <li class="check"><strong>WTP headroom is huge.</strong> ~£183/mo to fully manage a parent vs £20–30/hr UK care — price is not the objection; <strong>trust is.</strong></li>
+        <li class="check"><strong>Care-fluent audience.</strong> Many UK Nepalis work in the NHS/social care — they already value professional caregiving.</li>
+        <li class="check"><strong>Dense trust networks.</strong> NRNA UK + Gurkha associations give warm, high-credibility reach.</li>
+        <li class="check"><strong>Then expand</strong> down every remittance corridor — Gulf, Australia, USA — where the diaspora is far larger.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="footnote">Sources: ONS 2021 Census; Rushmoor BC; World Bank UK→Nepal corridor (~3.5% cost). Within-UK targeting = London (Hounslow/Hillingdon/Ealing/Woolwich) + Reading/Basingstoke.</p>
+</section>
+
+<!-- 6 — MARKET / TAM -->
+<section class="slide">
+  <span class="num">06</span>
+  <span class="kicker">Market · UK beachhead sizing</span>
+  <h2>A funded wedge into a global care economy</h2>
+  <div class="grid2" style="align-items:center">
+    <div class="chartwrap">
+      <svg viewBox="0 0 460 320" role="img" aria-label="UK market funnel">
+        <polygon points="20,28 440,28 372,90 88,90" fill="#0e7c7b"/>
+        <text x="230" y="65" text-anchor="middle" font-size="15.5" font-weight="800" fill="#fff">~32,400 UK Nepali households</text>
+        <polygon points="88,100 372,100 320,162 140,162" fill="#2a9d8f"/>
+        <text x="230" y="137" text-anchor="middle" font-size="14.5" font-weight="800" fill="#fff">~14,600 with a parent in Nepal · TAM</text>
+        <polygon points="140,172 320,172 280,234 180,234" fill="#f0a04b"/>
+        <text x="230" y="208" text-anchor="middle" font-size="14" font-weight="800" fill="#3a2410">~1,450 acute need / yr · SAM</text>
+        <polygon points="180,244 280,244 258,300 202,300" fill="#e07a5f"/>
+        <text x="230" y="277" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">~70 Y1 · SOM</text>
+      </svg>
+    </div>
+    <div>
+      <ul>
+        <li class="check"><strong>UK TAM:</strong> ~14,600 households with an ageing parent in Nepal — a reachable, concentrated wedge.</li>
+        <li class="check"><strong>Global TAM:</strong> ~1.2M+ migrants worldwide with elderly parents home — the UK proves a model that ports corridor-by-corridor.</li>
+        <li class="check"><strong>Expansion = a sales motion:</strong> recruit a caregiver pool, sign hospital MoUs, light up a corridor.</li>
+      </ul>
+      <p class="footnote">Modelled from verified ONS/Census data; assumptions (≈45% parent-in-Nepal, ≈18% acute/yr, ≈5% Y1 capture) stated and survey-validated. Illustrative, not measured.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 — COMPETITION -->
+<section class="slide" style="background:linear-gradient(160deg,#fff 0%,#f1f7f6 100%)">
+  <span class="num">07</span>
+  <span class="kicker">Competitive landscape · the honest read</span>
+  <h2>Carers exist. A cross-border trust layer does not.</h2>
+  <p>We are not claiming an empty market — that would be naïve. Nepal home-care providers exist. <strong>None is a UK-diaspora-first, app-mediated platform with vetting, daily proof, FX billing and hospital MoUs.</strong> That gap is the wedge — and the window is open, not infinite.</p>
+  <div class="grid2" style="margin-top:8px">
+    <div>
+      <h3 class="muted" style="font-size:15px;text-transform:uppercase;letter-spacing:1px">The field today</h3>
+      <ul>
+        <li class="x"><strong>MedEx, Nursing Care Nepal, Doctors House Call</strong> — Nepal home-nursing; one already courts NRN families.</li>
+        <li class="x"><strong>RNest</strong> — an app entrant in the Nepal care space.</li>
+        <li class="x"><strong>Informal attendants</strong> — the disorganised status quo.</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="muted" style="font-size:15px;text-transform:uppercase;letter-spacing:1px">Why Syahar wins</h3>
+      <ul>
+        <li class="check"><strong>The cross-border experience:</strong> UK-side onboarding, daily reports, home-currency billing, concierge.</li>
+        <li class="check"><strong>A switching-cost moat:</strong> the family health record + daily-report habit + caregiver loyalty.</li>
+        <li class="check"><strong>Build-or-partner on supply:</strong> existing agencies can be suppliers, not rivals — we own the diaspora relationship.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 8 — PRICING -->
+<section class="slide">
+  <span class="num">08</span>
+  <span class="kicker">Pricing model</span>
+  <h2>Priced in rupees, tiered, family-split</h2>
+  <p>A flat monthly plan per tier — peace of mind is continuous. The caregiver cost <em>is</em> redirected care spend; Syahar's margin is a thin, deliberate premium for verification + cross-border payment.</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Tier</th><th>What it is</th><th>NPR / mo</th><th>≈ USD</th><th>≈ GBP</th><th>Who it's for</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Lite</strong></td><td>Weekly verified check-in + daily report</td><td class="price">Rs 9,000</td><td class="price">~$68</td><td class="price">~£51</td><td>The wedge — lone remitter, low commitment</td></tr>
+      <tr><td><strong>Care</strong> <span class="pill" style="margin:0">core</span></td><td>Regular attendant + daily reports (our ACV)</td><td class="price">Rs 32,000</td><td class="price">~$240</td><td class="price">~£183</td><td>The core family plan; siblings split</td></tr>
+      <tr><td><strong>Full Care</strong></td><td>Full-time / live-in caregiver</td><td class="price">Rs 72,000</td><td class="price">~$540</td><td class="price">~£411</td><td>Heavy need; post-discharge continuity</td></tr>
+      <tr><td><strong>Add-ons</strong></td><td>Tele-consult · meds delivery · equipment rental · festival visit</td><td class="price">à la carte</td><td class="price">—</td><td class="price">—</td><td>The high-margin layer (20–35%)</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="footnote">Tiers anchored to verified Nepal home-care pricing (basic ~Rs 9k → 24/7 ~Rs 72k/mo). Blended Syahar take 22% (Phase 1) → 28% (Phase 5) as subscription + FX margin layer in.</p>
+</section>
+
+<!-- 9 — UNIT ECONOMICS -->
+<section class="slide">
+  <span class="num">09</span>
+  <span class="kicker">Unit economics · per placement</span>
+  <h2>Thin per-unit margin — that compounds with duration</h2>
+  <p>Worked on the core <strong>Care</strong> plan. Caregiver wages flow family→carer (not a Syahar cost); Syahar earns a blended take on gross care spend.</p>
+  <div class="chartwrap">
+    <svg viewBox="0 0 820 320" role="img" aria-label="Unit economics">
+      <line x1="60" y1="20" x2="60" y2="250" stroke="#cdd9de" stroke-width="1.5"/>
+      <line x1="60" y1="250" x2="800" y2="250" stroke="#cdd9de" stroke-width="1.5"/>
+      <!-- scale 0..32000 -> 220px. h=v/32000*220 -->
+      <rect x="95" y="30" width="130" height="220" rx="4" fill="#2a9d8f"/>
+      <text x="160" y="22" text-anchor="middle" font-size="15" font-weight="800" fill="#15303b">Rs 32,000</text>
+      <text x="160" y="270" text-anchor="middle" font-size="13.5" fill="#3a5563">Gross care spend / mo</text>
+      <!-- caregiver pass-through 24960 (78%) h=171.6 from top -->
+      <rect x="290" y="30" width="130" height="172" rx="4" fill="#e07a5f"/>
+      <text x="355" y="22" text-anchor="middle" font-size="15" font-weight="800" fill="#15303b">− Rs 24,960</text>
+      <text x="355" y="270" text-anchor="middle" font-size="13.5" fill="#3a5563">Caregiver (pass-through)</text>
+      <!-- Syahar take 7040 (22%) h=48.4 y=201.6 -->
+      <rect x="485" y="202" width="130" height="48" rx="4" fill="#f0a04b"/>
+      <text x="550" y="194" text-anchor="middle" font-size="15" font-weight="800" fill="#15303b">Rs 7,040 / mo</text>
+      <text x="550" y="270" text-anchor="middle" font-size="13.5" fill="#3a5563">Syahar take (22%)</text>
+      <!-- × 2.5 mo duration = 17600 net rev/placement -->
+      <rect x="680" y="129" width="130" height="121" rx="4" fill="#0e7c7b"/>
+      <text x="745" y="121" text-anchor="middle" font-size="15" font-weight="800" fill="#0a5a59">Rs 17,600</text>
+      <text x="745" y="270" text-anchor="middle" font-size="13.5" fill="#3a5563">Net rev / placement</text>
+      <line x1="225" y1="30" x2="290" y2="30" stroke="#9fb3bb" stroke-dasharray="4 4"/>
+      <line x1="615" y1="202" x2="680" y2="202" stroke="#9fb3bb" stroke-dasharray="4 4"/>
+    </svg>
+  </div>
+  <div class="grid3" style="margin-top:6px">
+    <div class="card2"><div class="stat">Rs 7,040</div><div class="lbl">Syahar take / family / mo (~£40)</div></div>
+    <div class="card2"><div class="stat">2.5 mo</div><div class="lbl">avg placement duration → Rs 17,600 net</div></div>
+    <div class="card2"><div class="stat">22 → 28%</div><div class="lbl">blended take-rate, Phase 1 → 5</div></div>
+  </div>
+</section>
+
+<!-- 10 — REVENUE MODEL -->
+<section class="slide">
+  <span class="num">10</span>
+  <span class="kicker">Business model · four stacked streams</span>
+  <h2>One placement opens four revenue lines</h2>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Stream</th><th>Mechanism</th><th>Rate / margin</th><th>Live from</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Placement commission</strong></td><td>% of caregiver fee per booking</td><td class="price">15–20%</td><td>Phase 1</td></tr>
+      <tr><td><strong>Family subscription</strong></td><td>Monthly monitoring + concierge</td><td class="price">USD 9–25/mo</td><td>Phase 2</td></tr>
+      <tr><td><strong>Payments / FX margin</strong></td><td>Spread on cross-border settlement</td><td class="price">1.5–3.0%</td><td>Phase 2</td></tr>
+      <tr><td><strong>Premium add-ons</strong></td><td>Tele-consult, meds, equipment rental</td><td class="price">20–35% margin</td><td>Phase 3</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Take-rate climbs from <strong>22% → 28%</strong> as subscription and FX margin layer onto the placement base — and continuity (post-discharge) care extends duration, lifting lifetime value per family.</p>
+</section>
+
+<!-- 11 — 5-YEAR FINANCIALS -->
+<section class="slide">
+  <span class="num">11</span>
+  <span class="kicker">Financial projection · 5 years</span>
+  <h2>Investment years 1–3, profitable from Year 4</h2>
+  <div class="chartwrap">
+    <svg viewBox="0 0 820 380" role="img" aria-label="Five year revenue and cost">
+      <line x1="80" y1="30" x2="80" y2="300" stroke="#cdd9de" stroke-width="1.5"/>
+      <line x1="80" y1="300" x2="800" y2="300" stroke="#cdd9de" stroke-width="1.5"/>
+      <!-- scale 0..45 cr -> 270px. y(v)=300 - v/45*270 -->
+      <g font-size="12.5" fill="#6b8290">
+        <line x1="80" y1="300" x2="800" y2="300" stroke="#eef3f4"/><text x="74" y="304" text-anchor="end">0</text>
+        <line x1="80" y1="240" x2="800" y2="240" stroke="#eef3f4"/><text x="74" y="244" text-anchor="end">10</text>
+        <line x1="80" y1="180" x2="800" y2="180" stroke="#eef3f4"/><text x="74" y="184" text-anchor="end">20</text>
+        <line x1="80" y1="120" x2="800" y2="120" stroke="#eef3f4"/><text x="74" y="124" text-anchor="end">30</text>
+        <line x1="80" y1="60" x2="800" y2="60" stroke="#eef3f4"/><text x="74" y="64" text-anchor="end">40</text>
+      </g>
+      <text x="20" y="170" transform="rotate(-90 20 170)" text-anchor="middle" font-size="13" fill="#6b8290">NPR crore</text>
+      <!-- groups at x: Y1 120, Y2 255, Y3 390, Y4 525, Y5 660 ; rev (teal) + cost (rose) -->
+      <!-- y(v)=300 - v/45*270 ; h=v/45*270 -->
+      <!-- Y1 rev .30 h1.8 y298.2 ; cost1.25 h7.5 y292.5 -->
+      <rect x="120" y="298.2" width="44" height="1.8" fill="#0e7c7b"/><rect x="168" y="292.5" width="44" height="7.5" fill="#e07a5f"/>
+      <text x="166" y="320" text-anchor="middle" font-size="13.5" fill="#3a5563">Y1</text>
+      <text x="166" y="338" text-anchor="middle" font-size="12" fill="#b5503a">(0.95)</text>
+      <!-- Y2 rev2.0 h12 y288 ; cost3.4 h20.4 y279.6 -->
+      <rect x="255" y="288" width="44" height="12" fill="#0e7c7b"/><rect x="303" y="279.6" width="44" height="20.4" fill="#e07a5f"/>
+      <text x="301" y="320" text-anchor="middle" font-size="13.5" fill="#3a5563">Y2</text>
+      <text x="301" y="338" text-anchor="middle" font-size="12" fill="#b5503a">(1.40)</text>
+      <!-- Y3 rev7 h42 y258 ; cost7.6 h45.6 y254.4 -->
+      <rect x="390" y="258" width="44" height="42" fill="#0e7c7b"/><rect x="438" y="254.4" width="44" height="45.6" fill="#e07a5f"/>
+      <text x="436" y="320" text-anchor="middle" font-size="13.5" fill="#3a5563">Y3</text>
+      <text x="436" y="338" text-anchor="middle" font-size="12" fill="#b5503a">(0.60)</text>
+      <!-- Y4 rev20.5 h123 y177 ; cost15.1 h90.6 y209.4 -->
+      <rect x="525" y="177" width="44" height="123" fill="#0e7c7b"/><rect x="573" y="209.4" width="44" height="90.6" fill="#e07a5f"/>
+      <text x="571" y="320" text-anchor="middle" font-size="13.5" fill="#3a5563">Y4</text>
+      <text x="571" y="338" text-anchor="middle" font-size="12" fill="#0a5a59" font-weight="700">+5.40</text>
+      <!-- Y5 rev41.4 h248.4 y51.6 ; cost24.5 h147 y153 -->
+      <rect x="660" y="51.6" width="44" height="248.4" fill="#0e7c7b"/><rect x="708" y="153" width="44" height="147" fill="#e07a5f"/>
+      <text x="682" y="44" text-anchor="middle" font-size="14" font-weight="800" fill="#0a5a59">41.4</text>
+      <text x="706" y="320" text-anchor="middle" font-size="13.5" fill="#3a5563">Y5</text>
+      <text x="706" y="338" text-anchor="middle" font-size="12" fill="#0a5a59" font-weight="700">+16.9</text>
+    </svg>
+  </div>
+  <div class="legend">
+    <span><i style="background:#0e7c7b"></i> Net revenue (NPR cr)</span>
+    <span><i style="background:#e07a5f"></i> Operating cost (NPR cr)</span>
+    <span><i style="background:#6b8290"></i> ( ) = operating loss · + = operating profit</span>
+  </div>
+  <div class="grid3" style="margin-top:14px">
+    <div class="card2"><div class="stat">Year 4</div><div class="lbl">first full-year operating profit</div></div>
+    <div class="card2"><div class="stat">41%</div><div class="lbl">operating margin by Year 5</div></div>
+    <div class="card2"><div class="stat">NPR 41.4cr</div><div class="lbl">Year-5 net revenue (~USD 3.1M)</div></div>
+  </div>
+</section>
+
+<!-- 12 — PHASE PLAN & BUDGET -->
+<section class="slide">
+  <span class="num">12</span>
+  <span class="kicker">Five-year plan · phase budgets</span>
+  <h2>Phase-gated: capital advances only on real data</h2>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Phase</th><th>Theme</th><th>Cities</th><th>Placements/mo</th><th>Budget (NPR)</th><th>Op. profit (NPR cr)</th></tr></thead>
+    <tbody>
+      <tr><td><strong>P1 · Y1</strong></td><td>Validate</td><td>1 (KTM)</td><td>60</td><td class="price">1.25 cr</td><td>(0.95)</td></tr>
+      <tr><td><strong>P2 · Y2</strong></td><td>Foundation</td><td>2</td><td>300</td><td class="price">3.40 cr</td><td>(1.40)</td></tr>
+      <tr><td><strong>P3 · Y3</strong></td><td>Scale</td><td>4</td><td>850</td><td class="price">7.60 cr</td><td>(0.60)</td></tr>
+      <tr><td><strong>P4 · Y4</strong></td><td>Deepen</td><td>5</td><td>2,000</td><td class="price">15.1 cr</td><td>+5.40</td></tr>
+      <tr><td><strong>P5 · Y5</strong></td><td>Expand</td><td>7+</td><td>3,600</td><td class="price">24.5 cr</td><td>+16.9</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Each phase has one objective and hard exit-gate criteria. <strong>Phases 1–3 absorb ~NPR 3cr (~USD 2.2M)</strong> of investment; monthly profitability arrives mid-Phase 3, full-year profit in Phase 4.</p>
+</section>
+
+<!-- 13 — PHASE 1 BUDGET BY ACTIONABLE ITEM -->
+<section class="slide">
+  <span class="num">13</span>
+  <span class="kicker">Budget by actionable item · Phase 1 (Year 1)</span>
+  <h2>Where the NPR 1.25cr goes — itemised</h2>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Workstream / action</th><th>Owner</th><th>NPR</th><th>≈ USD</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Legal &amp; compliance</strong> — registration+PAN/VAT, FDI advice, ×3 hospital MoUs, indemnity+liability insurance, ToS/privacy/contracts, PSP contract</td><td>Legal Counsel</td><td class="price">~2,70,000</td><td class="price">~$2,030</td></tr>
+      <tr><td><strong>Caregiver supply</strong> — vet 40 carers (Rs 2,500/head), 2-day onboarding training, ×5 on-call backup bench</td><td>Recruiter / QA</td><td class="price">~2,30,000</td><td class="price">~$1,730</td></tr>
+      <tr><td><strong>Product / MVP</strong> — coordinator console + family app, UI/UX, payment API integration, hosting+SMS, app-store, security audit</td><td>Lead Engineer</td><td class="price">~3,24,000</td><td class="price">~$2,440</td></tr>
+      <tr><td><strong>Acquisition</strong> — hospital on-site materials, design-partner concierge, diaspora outreach, referral system, testimonial videos, paid-social test</td><td>Marketing Lead</td><td class="price">~2,80,000</td><td class="price">~$2,100</td></tr>
+      <tr><td><strong>People (annualised)</strong> — Care Coordinator, Recruiter/QA, Lead Engineer salaries</td><td>CEO</td><td class="price">~10,56,000</td><td class="price">~$7,940</td></tr>
+      <tr><td><strong>G&amp;A</strong> — office/co-working, infra, contingency buffer</td><td>CEO</td><td class="price">balance to 1.25cr</td><td class="price">—</td></tr>
+      <tr><td><strong>Phase 1 envelope (total)</strong></td><td></td><td class="price">NPR 1.25 cr</td><td class="price">~$94,000</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="footnote">Each line maps to a tracked task (SYA-1…17). One-off action costs + annualised salaries fit inside the NPR 1.25cr Phase-1 budget with a prudence buffer.</p>
+</section>
+
+<!-- 14 — PRE-LAUNCH MARKETING BUDGET -->
+<section class="slide" style="background:linear-gradient(160deg,#fff 0%,#fdf4ec 100%)">
+  <span class="num">14</span>
+  <span class="ribbon">PRE-LAUNCH MARKETING · UK</span>
+  <h2>A tranched, milestone-gated awareness sprint</h2>
+  <p>NPR 250,000 (~£1,430) inside the Phase-1 marketing envelope — released against evidence, only ~32% at risk before the first proof point. Agents (not freelancers) produce the content, converting cash cost into low-cost model spend.</p>
+  <div class="chartwrap">
+    <svg viewBox="0 0 820 270" role="img" aria-label="Pre-launch budget tranches">
+      <line x1="70" y1="20" x2="70" y2="200" stroke="#cdd9de" stroke-width="1.5"/>
+      <line x1="70" y1="200" x2="800" y2="200" stroke="#cdd9de" stroke-width="1.5"/>
+      <!-- scale 0..100k -> 170px. h=v/100000*170 -->
+      <!-- T1 80k h136 y64 -->
+      <rect x="130" y="64" width="120" height="136" rx="5" fill="#0e7c7b"/>
+      <text x="190" y="56" text-anchor="middle" font-size="15" font-weight="800" fill="#15303b">Rs 80k</text>
+      <text x="190" y="220" text-anchor="middle" font-size="13.5" fill="#3a5563">T1 · Build</text>
+      <text x="190" y="238" text-anchor="middle" font-size="12" fill="#6b8290">gate: plan approved</text>
+      <!-- T2 90k h153 y47 -->
+      <rect x="320" y="47" width="120" height="153" rx="5" fill="#2a9d8f"/>
+      <text x="380" y="39" text-anchor="middle" font-size="15" font-weight="800" fill="#15303b">Rs 90k</text>
+      <text x="380" y="220" text-anchor="middle" font-size="13.5" fill="#3a5563">T2 · Activate</text>
+      <text x="380" y="238" text-anchor="middle" font-size="12" fill="#6b8290">gate: waitlist live</text>
+      <!-- T3 50k h85 y115 -->
+      <rect x="510" y="115" width="120" height="85" rx="5" fill="#f0a04b"/>
+      <text x="570" y="107" text-anchor="middle" font-size="15" font-weight="800" fill="#15303b">Rs 50k</text>
+      <text x="570" y="220" text-anchor="middle" font-size="13.5" fill="#3a5563">T3 · Convert</text>
+      <text x="570" y="238" text-anchor="middle" font-size="12" fill="#6b8290">gate: 150 signups</text>
+      <!-- reserve 30k h51 y149 -->
+      <rect x="700" y="149" width="120" height="51" rx="5" fill="#e07a5f"/>
+      <text x="760" y="141" text-anchor="middle" font-size="15" font-weight="800" fill="#15303b">Rs 30k</text>
+      <text x="760" y="220" text-anchor="middle" font-size="13.5" fill="#3a5563">Reserve</text>
+    </svg>
+  </div>
+  <p class="muted" style="font-size:15px">Target by launch: <strong>300+ corridor-tagged waitlist</strong>, ≥3 NRNA chapters engaged, ≥1 corridor with organic referrals — the Phase-1 exit-gate signal. Kill criteria: pause paid social if CAC &gt; Rs 4,000.</p>
+</section>
+
+<!-- 15 — FUNDING ASK -->
+<section class="slide">
+  <span class="num">15</span>
+  <span class="kicker">The ask · use of funds</span>
+  <h2>Pre-seed: USD 250–350K to clear the Phase-1 gate</h2>
+  <div class="grid2">
+    <div>
+      <div class="tablewrap">
+      <table>
+        <thead><tr><th>Round</th><th>Timing</th><th>Raise</th><th>Primary use</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Pre-seed</strong></td><td>Now (P1)</td><td class="price">$250–350K</td><td>MVP, first hires, UK validation</td></tr>
+          <tr><td><strong>Seed</strong></td><td>Enter P2</td><td class="price">$1.2–1.5M</td><td>Payments rail, automation, city 2</td></tr>
+          <tr><td><strong>Series A</strong></td><td>Enter P4</td><td class="price">$4–6M</td><td>Continuity care, insurance, corridors</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="card2" style="background:var(--navy);color:#fff;border:none">
+      <div class="tag" style="color:var(--amber)">Pre-seed use of funds</div>
+      <ul style="margin-top:10px">
+        <li class="check" style="color:rgba(255,255,255,.9)">~40% product MVP + security</li>
+        <li class="check" style="color:rgba(255,255,255,.9)">~25% founding team (coordinator, QA, engineer)</li>
+        <li class="check" style="color:rgba(255,255,255,.9)">~20% caregiver supply + legal/insurance</li>
+        <li class="check" style="color:rgba(255,255,255,.9)">~15% UK acquisition + buffer</li>
+      </ul>
+    </div>
+  </div>
+  <p class="footnote">Total external funding across Phases 1–3: ~NPR 3.5–4.0cr (~USD 2.6–3.0M) incl. prudence buffer. Self-sustaining from Phase 4.</p>
+</section>
+
+<!-- 16 — RISKS -->
+<section class="slide">
+  <span class="num">16</span>
+  <span class="kicker">Risks we design around</span>
+  <h2>What could kill this — and our answer</h2>
+  <div class="grid2">
+    <div>
+      <h3 class="muted" style="font-size:15px;text-transform:uppercase;letter-spacing:1px">Risk</h3>
+      <ul>
+        <li class="x"><strong>Serious care incident</strong> — one case is brand-radioactive.</li>
+        <li class="x"><strong>Trust ceiling</strong> — a stranger in a parent's room from 4,500 miles.</li>
+        <li class="x"><strong>Caregiver supply</strong> can't meet demand.</li>
+        <li class="x"><strong>Disintermediation</strong> — family pays the carer directly.</li>
+        <li class="x"><strong>Competitor / app entrant</strong> moves on the corridor.</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="muted" style="font-size:15px;text-transform:uppercase;letter-spacing:1px">Our answer</h3>
+      <ul>
+        <li class="check">Vetting, insurance, medical-scope limits, fast escalation SOPs.</li>
+        <li class="check">Manual concierge, real daily proof, money-back first placement.</li>
+        <li class="check">Training pipeline, referral incentives, dignity-led retention.</li>
+        <li class="check">Own the trust layer + recurring proof + family health record.</li>
+        <li class="check">Speed on the diaspora moat; partner agencies for supply.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 17 — VISION / NEXT -->
+<section class="slide hero" style="min-height:520px">
+  <span class="num">17</span>
+  <span class="kicker">What's next</span>
+  <h2 style="font-size:40px">Be there for your parents —<br>and finally see they're okay.</h2>
+  <div class="grid3" style="margin-top:24px">
+    <div class="card2" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18)">
+      <div style="font-size:30px;font-weight:800;color:var(--amber)">Now</div>
+      <p style="color:rgba(255,255,255,.85);font-size:16px;margin:6px 0 0">Clear the Phase-1 gate in the UK corridor: 150 placements, ≥4.5★, contribution-positive.</p>
+    </div>
+    <div class="card2" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18)">
+      <div style="font-size:30px;font-weight:800;color:var(--amber)">Next</div>
+      <p style="color:rgba(255,255,255,.85);font-size:16px;margin:6px 0 0">Industrialise: payments rail, automated matching, city two.</p>
+    </div>
+    <div class="card2" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18)">
+      <div style="font-size:30px;font-weight:800;color:var(--amber)">Then</div>
+      <p style="color:rgba(255,255,255,.85);font-size:16px;margin:6px 0 0">Scale corridor-by-corridor to NPR 41cr revenue by Year 5.</p>
+    </div>
+  </div>
+  <p class="muted" style="margin-top:34px;font-size:14px;color:rgba(255,255,255,.6)">Syahar · investor deck · figures are researched estimates &amp; planning assumptions from the 5-year plan and UK market reports #1–#2, to be validated in the pilot. FX: USD 1 ≈ NPR 133 · £1 ≈ NPR 175.</p>
+</section>
+
+</div>
+</body>
+</html>
