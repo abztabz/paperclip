@@ -5,6 +5,9 @@ here as standing unless the user (CEO) changes it. The committed package on bran
 `claude/ceo-execution-plan-1p0q0i` is the **source of truth**; the live control
 plane is an ephemeral demo.
 
+## 🎯 Current scope: YEAR 1 (Phase 1 — Validate) ONLY
+CEO directive (2026-06-16): focus on Year 1 only. Do **not** spin up Phase 2–5 work, 5-year automation build-outs, or later-phase hires unless asked. Year-1 objective: prove diaspora families pay for managed in-patient care and caregivers deliver to standard — **150 placements, ≥4.5★, ≥70% caregiver retention, contribution-positive, ≥1 organic-referral corridor — within the NPR 1.25cr budget.** 5-year strategy work (deck projections, opex automation plan) is parked as reference, not active.
+
 ## ⭐ Golden rules (non-negotiable)
 1. **Positioning:** Syahar is a **cross-border caregiver platform** — peace of mind for diaspora families with hospitalised/ageing parents in Nepal. It is **NEVER** a remittance / money-transfer / FX service. Payment brands (IME, eSewa, Khalti, PSPs) are **partners and audience signals, never our product or competitors.** Every deliverable must sell care; correct any drift before use. (Enforced in COMPANY.md + all marketing agents.)
 2. **Budget approval:** seek explicit CEO approval **before disbursing any budget** (model spend or cash). Roll back unapproved disbursements. Running agents on the OAuth **subscription** = $0 metered (it consumes subscription usage/limits, not money), but still get approval before running.
